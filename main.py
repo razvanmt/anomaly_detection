@@ -18,7 +18,7 @@ def detect_anomaly(win_size, threshold):
         # Appends the user input to the empty sample_data initialized above
         sample_data.append(data)
 
-        # Handling the 3 situations our loop might run into
+        # Handling the situations our loop might run into
         if sample_data.index(data) <= win_size - 1 and sample_data.index(data) == 0:
             print(f"{sample_data[i]} - Normal (no historical data)")
         elif sample_data.index(data) <= win_size - 1:
